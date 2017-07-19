@@ -1,0 +1,427 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- iid: 100 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css28/LibCal_public.min.css" rel="stylesheet">
+    <link href="/css28/print.min.css" rel="stylesheet" media="print">
+
+    <title>Leavey Ahmanson Information Commons (Lower Level) - Reserve a Room - USC Libraries</title>
+
+    <style>
+		#s-lc-rm-ac-success, #s-lc-rm-ac-s-no-conf, fieldset { margin: 20px 0px; }
+		#s-lc-rm-ac-times ul { margin: 5px; }
+		h2 { font-size: 90%; }
+		</style>    <script src="/js28/LibCal_public.min.js"></script>
+        <script> var springLang  = { eq_js_add_cart_btn: "Add to Cart", eq_js_add_cc_btn: "Add to Cart & Checkout", eq_js_add_eq_btn: "Add Equipment", eq_js_add_start: "All additional items must have a starting time of", eq_js_add_to_cart: "Add Item to Cart", eq_js_cart_tt: "Create a shopping cart with these space bookings, and go to equipment booking page to add more items to the cart.", eq_js_change_date: "Change Date", eq_js_close: "Close", eq_js_date: "Date", eq_js_det_return: "Determining return time", eq_js_from: "From:", eq_js_from_det: "from", eq_js_go_to_date: "Go To Date", eq_js_isRequired: "is required!", eq_js_rem_pending: "Remove Pending Booking", eq_js_spacew_forb_multi: "Forbidden from booking same resource multiple times in a single booking.<br><br>Please only select sequential checkboxes.", eq_js_spacew_forb_single: "Forbidden from booking different resources in a single booking.", eq_js_to: "To:", eq_js_until_det: "until..." };</script>
+    <link rel="stylesheet" type="text/css" href="//lib-php.usc.edu/dependencies/css/usc_libguides_theme.css">
+<style type="text/css">
+/***** global *****/
+
+/****START New USC Header/Footer****/
+
+/****Header****/
+#header-wrapper {
+  width: 100%;
+  background: #9a1c1d;
+  background: -moz-linear-gradient(top, #9a1c1d 0%, #680301 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9a1c1d), color-stop(100%, #680301));
+  background: -webkit-linear-gradient(top, #9a1c1d 0%, #680301 100%);
+  background: -o-linear-gradient(top, #9a1c1d 0%, #680301 100%);
+  background: -ms-linear-gradient(top, #9a1c1d 0%, #680301 100%);
+  background: linear-gradient(to bottom, #9a1c1d 0%, #680301 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9a1c1d', endColorstr='#680301', GradientType=0);
+  background: linear-gradient(to bottom, #9a1c1d, #680301);
+  position: relative;
+  height: 125px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#header-wrapper #header-divider {
+  border-top: 1px solid #680300;
+  border-bottom: 1px solid #9A1C19;
+  width: 100%;
+  top: 70px;
+  left: 0;
+  height: 0px;
+  position: absolute;
+}
+#header-wrapper #sub-header {
+  clear: both;
+  position: relative;
+  margin-top: 30px;
+}
+#header-wrapper #sub-header .utility {
+  float: right;
+}
+
+.utility {
+  width: 275px;
+  padding-right: 16px;
+}
+
+#askalibrarian.navbar-btn { margin-top:5.5px; margin-bottom:3px; padding:3px 12px; }
+#askalibrarian > .glyphicon-question-sign { color:#900; }
+
+#header-wrapper #sub-header h1 {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  margin:0;
+  color: white;
+  font-size: 2em;
+  float: left;
+}
+
+#header-wrapper #sub-header h1 a {
+  text-decoration: none;
+  margin:0;
+  color: white;
+}
+
+nav {
+  background: #2c2c2c;
+  width: 100%;
+}
+
+a.usc-logo {
+  float: right;
+}
+
+#askalibrarian {
+  float:right;
+}
+
+/****libchat***/
+img.libchat_btn_img { float:right; margin-top: -5px; }
+
+/****Footer***/
+#footer-wrapper {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  width: 100%;
+  height: 167px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#footer-wrapper .footer {
+  background: #777;
+  height: 120px;
+}
+#footer-wrapper .usc-lib-logo {
+  position: relative;
+  padding: 0px 20px;
+  top: 40px;
+}
+#footer-wrapper .footer-cap {
+  background: #454545;
+  height: 32px;
+  color: white;
+  padding: 0px 20px;
+  padding-top: 15px;
+}
+
+/* Make filter name disappear in dropdowns */
+.chosen-container .chosen-results li.group-result {
+  color: #fff; 
+}
+
+.btn-info {
+    /* color: #fff; */
+    background-color: #990000;
+}
+.btn-info:hover {
+    /* color: #fff; */
+    background-color: #BF0400;
+    border-color:#BF0400;
+}
+btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.s-lc-box-title h2 {
+   font-size: 1.1em;
+   color: #900;
+   font-weight: bold;
+}
+
+
+/****Responsive****/
+@media (max-width: 550px) {
+
+  .usc-logo {
+    display: none;
+  }
+  #askalibrarian {
+    display:none;
+  }
+  div[id^="libchat"] {
+    display: none;
+  }
+  #footer-wrapper .footer-cap {
+    font-size: .7em;
+  }
+}
+
+/****END New USC Header/Footer****/
+
+
+/***** global *****/
+
+body { padding-left:0; padding-right:0; font-size:1.3em;}
+#s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-pills > li > a { font-weight:normal; }
+#s-lg-guide-tabs-title-bar > .navbar { min-height:0; }
+#s-lg-tabs-container .nav .dropdown-toggle .caret { border-top-color:#666; }
+#s-lg-tabs-container .nav .active .dropdown-toggle .caret { border-top-color:#fff; }
+#sidenavflexible #s-lg-tabs-container .nav-tabs > li > a, #s-lg-tabs-container .nav-pills > li > a { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+#sidenavflexible #s-lg-tabs-container .nav-tabs > li > a:hover, #s-lg-tabs-container .nav-pills > li > a:hover, #s-lg-tabs-container .nav-tabs > .active > a, #s-lg-tabs-container .nav-pills > .active > a, #s-lg-tabs-container .nav-tabs > .active > a:hover, #s-lg-tabs-container .nav-pills > .active > a:hover { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+.marker { background-color:#FFFF00; }
+
+</style>
+<link rel="shortcut icon" href="http://www.usc.edu/favicon.ico" type="image/vnd.microsoft.icon" /></head>
+<body id="s-lc-rm-ac-4490" class="s-lc-public s-lc-public-page-">
+<a id="s-lc-public-skiplink" class="alert-info" href="#s-lc-public-main">Skip to Main Content</a>
+<div class="sr-only" title="Information for Screenreader Users">
+    </div>
+<div id="s-lc-public-cust-header" role="banner"><!--BEGIN USC Libraries Header-->
+<header id="header-wrapper" role="banner">
+  <a href="https://libraries.usc.edu" class="usc-lib-logo"><img src="https://s3.amazonaws.com/libapps/customers/143/images/usc-lib-logo.png" alt="USC Libraries"></a>
+  <a href="http://www.usc.edu" class="usc-logo"><img src="https://s3.amazonaws.com/libapps/customers/143/images/usc-logo.png" alt="University of Southern California"></a>
+  <div id="header-divider">&nbsp;</div>
+  <div id="sub-header">
+    <h1><a href="/">Reserve a Room</a></h1>
+    <div class="utility">
+      <a id="askalibrarian" class="btn btn-default navbar-btn navbar-right" href="https://libraries.usc.edu/ask-a-librarian"><i class="glyphicon glyphicon-question-sign"></i> Ask a Librarian</a>
+    </div>
+  </div>
+</header>
+<!--END USC Libraries Header--></div><div class="container">
+    
+			<div id="s-lc-public-bc" class="row">
+				<div class="col-md-12">
+					<ol class="breadcrumb">
+						<li><a href="https://libraries.usc.edu">USC Libraries</a></li>
+						<li><a href="//libcal.usc.edu/">Reserve a Room</a></li>
+						
+						<li class="active">Leavey Ahmanson Information Commons (Lower Level)</li>
+					</ol>
+				</div>
+			</div><noscript><div class="alert alert-danger" id="noscript">Your browser has javascript disabled. Without javascript some functions will not work.</div></noscript><h1>Leavey Ahmanson Information Commons (Lower Level) <br/><small>Sunday, July 16, 2017</small></h1><div id="s-lc-public-main" class="s-lc-public-main" role="main"><section><div  id="s-lc-public-page-content"  class="row"><div  id="col1"  class="col-md-12 center">		
+			<form action="/rooms_acc.php" method="get" role="form" class="form-horizontal">
+						<input type="hidden" name="gid" value="4490" />
+						
+						<div class="form-group">
+							<label for="datei" class="sr-only">Change Date</label>
+							<div class="col-md-4">
+								<select name="d" id="datei" class="form-control"><option selected="selected" value="2017-07-16">Sunday, July 16th</option><option value="2017-07-17">Monday, July 17th</option><option value="2017-07-18">Tuesday, July 18th</option><option value="2017-07-19">Wednesday, July 19th</option><option value="2017-07-20">Thursday, July 20th</option><option value="2017-07-21">Friday, July 21st</option><option value="2017-07-22">Saturday, July 22nd</option><option value="2017-07-23">Sunday, July 23rd</option>		</select>
+						</div>
+						<div class="col-md-8">
+							<button type="submit" class="btn btn-primary">Change Date</button>
+						</div>
+					</div>
+					<div class="form-group" id="s-lc-rm-capacity-cont">
+					<fieldset><legend class="sr-only">Room Capacity</legend>
+					<label class="radio-inline s-lc-rm-cap-rl" for="cap0"><input type="radio" name="cap" id="cap0" value="0" checked="checked" onclick="return capacityr();"> For any number of people</label><label class="radio-inline" for="cap1"><input type="radio" name="cap" id="cap1" value="1" onclick="return capacityr();"> For 1 - 4 people</label></fieldset></div></form>
+						
+				<div id="s-lc-rm-acc-group-desc"><p style="text-align: center;"><strong><font size="2">Welcome to the ITS Leavey Ahmanson Info Commons Room Reservation System</font></strong></p>
+<p><span style="font-size: small;"></span><span style="font-size: small;">Rooms on the lower level of Leavey library may be reserved for up to 2 hours each day per person. To make a reservation you will need to use your&nbsp; USC e-mail address. </span></p>
+<p><span style="font-size: small;"><em>Groups have priority over individuals. If you are alone in a group study room, you may be asked to leave, even if you have the room reserved.</em></span></p>
+<p><span style="font-size: small;"><em><strong>NOTE:</strong> Not applicable to the MMPL Workstations</em></span></p>
+<p><span style="font-size: small;">If your group does not arrive in the first 10 minutes of your confirmed reservation, the space will become available for the rest of the hour and another group can take the room. </span></p>
+<p><span style="font-size: small;">For more information on each room, click the "I" located next to the room name.&nbsp;</span></p>
+<p>NOTE: YOU MAY NEED TO SCROLL DOWN TO ENTER YOUR ROOM BOOKING DETAILS.</p></div>
+				<span id="s-lc-rm-ac-daily-l" class="label label-default">Note: A Daily maximum of 2 hours can be booked.</span>
+				
+				<form id="roombookingform" id="roombookingform"  class="form-horizontal" role="form" method="POST">
+				<input type="hidden" name="gid" value="4490" /><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3F <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3G <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3H <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="checkbox">
+					  <label for="sch545458026">
+						<input type="checkbox" name="sid[]" id="sch545458026" value="545458026" data-seq="12618102" class="durc" onchange="checkDur('545458026');">
+						6:00pm - 7:00pm
+					  </label>
+					</div><input type="hidden" name="dur545458026" id="sch545458026dur" value="60" /><input type="hidden" name="t_sch545458026" id="t_sch545458026" value="3H 6:00pm - 7:00pm Sunday, July 16, 2017" /><a href='#bform' class='sr-only'>Skip to registration form</a></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3J <small>Capacity: 1</small></h2></legend><div>Group Study Room. Knoll furniture evaluation.</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3R <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3S <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3T <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3U <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3W <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="checkbox">
+					  <label for="sch545457984">
+						<input type="checkbox" name="sid[]" id="sch545457984" value="545457984" data-seq="12624102" class="durc" onchange="checkDur('545457984');">
+						6:00pm - 7:00pm
+					  </label>
+					</div><input type="hidden" name="dur545457984" id="sch545457984dur" value="60" /><input type="hidden" name="t_sch545457984" id="t_sch545457984" value="3W 6:00pm - 7:00pm Sunday, July 16, 2017" /><a href='#bform' class='sr-only'>Skip to registration form</a></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3X <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3AA <small>Capacity: 1</small></h2></legend><div>Group Study Room</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3K <small>Capacity: 1</small></h2></legend><div>Group Study Room. Haworth technology and furniture evaluation.</div><div class="checkbox">
+					  <label for="sch545457970">
+						<input type="checkbox" name="sid[]" id="sch545457970" value="545457970" data-seq="12446102" class="durc" onchange="checkDur('545457970');">
+						6:00pm - 7:00pm
+					  </label>
+					</div><input type="hidden" name="dur545457970" id="sch545457970dur" value="60" /><input type="hidden" name="t_sch545457970" id="t_sch545457970" value="3K 6:00pm - 7:00pm Sunday, July 16, 2017" /><a href='#bform' class='sr-only'>Skip to registration form</a></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3L <small>Capacity: 1</small></h2></legend><div>Group Study Room. Knoll technology and furniture evaluation.</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3N <small>Capacity: 1</small></h2></legend><div>Group Study Room. Haworth technology and furniture evaluation.</div><div class="alert alert-danger">No times available</div></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3P <small>Capacity: 1</small></h2></legend><div>Group Study Room. Collab8 technology evaluation.</div><div class="checkbox">
+					  <label for="sch545458054">
+						<input type="checkbox" name="sid[]" id="sch545458054" value="545458054" data-seq="12450102" class="durc" onchange="checkDur('545458054');">
+						6:00pm - 7:00pm
+					  </label>
+					</div><input type="hidden" name="dur545458054" id="sch545458054dur" value="60" /><input type="hidden" name="t_sch545458054" id="t_sch545458054" value="3P 6:00pm - 7:00pm Sunday, July 16, 2017" /><a href='#bform' class='sr-only'>Skip to registration form</a></fieldset><fieldset class="s-lc-rm-cap-l-1"><legend><h2>3Q <small>Capacity: 1</small></h2></legend><div>Group Study Room. Collab8 technology evaluation.</div><div class="checkbox">
+					  <label for="sch545458047">
+						<input type="checkbox" name="sid[]" id="sch545458047" value="545458047" data-seq="12451102" class="durc" onchange="checkDur('545458047');">
+						6:00pm - 7:00pm
+					  </label>
+					</div><input type="hidden" name="dur545458047" id="sch545458047dur" value="60" /><input type="hidden" name="t_sch545458047" id="t_sch545458047" value="3Q 6:00pm - 7:00pm Sunday, July 16, 2017" /><a href='#bform' class='sr-only'>Skip to registration form</a></fieldset><div id="s-lc-rm-tc-box" class="s-lc-rm-box"><p>Groups have priority. If you make a reservation as an individual, a group may ask you to relocate.<em>(Except for the MMPL iMac Workstations)</em></p>
+<p>Each reservation has a 10 minute grace period. If your group has not arrived after the first 10 minutes of your reservation have passed, another group may take over your reservation.<em></em></p>
+<p><span style="font-size: small;"><strong><span style="font-size: x-small;">NOTE: If furniture or equipment is lost or damaged while you are in the room, you may be charged for repair or replacement.</span><br /></strong></span></p>
+<p><span style="font-size: small;"><strong>&nbsp;</strong></span></p></div><fieldset><legend><h2 id="bform" tabindex="0">Booking Details</h2></legend><div class="form-group">
+										<div class="col-sm-12"><p class="pull-right text-muted" id="s-lc-rm-req-text">* Required Field</p></div>
+									</div>
+
+								<div class="form-group s-lc-rm-q s-lc-name">
+									<strong class="col-sm-3 control-label">Full Name *</strong>
+									<div class="col-sm-4">
+										<label for="fname" class="sr-only">First Name</label>
+										<input type="text" class="form-control" name="fname" id="fname" title="First Name" placeholder="First Name" aria-required="true">
+									</div>
+									<div class="col-sm-5">
+										<label for="lname" class="sr-only">Last Name</label>
+										<input type="text" class="form-control" name="lname" id="lname" title="Last Name" placeholder="Last Name" aria-required="true">
+									</div>
+								</div>
+								
+								<div class="form-group s-lc-rm-q s-lc-email">
+									<label for="email" class="col-sm-3 control-label">Email *</label>
+									<div class="col-sm-9">
+										<input type="email" class="form-control" name="email" id="email" aria-required="true">
+										Enter @usc.edu addresses only
+									</div>
+								</div><input type="hidden" name="qcount" value="0" />
+					<input type="hidden" name="fid" value="0" /><div class="form-group">
+							<div class="col-sm-offset-3 col-sm-9">
+							  <button class="btn btn-primary" type="submit" onclick="return bookRoom();" id="s-lc-rm-ac-but">Submit my Booking</button>
+							</div>
+						  </div></fieldset>
+								</form>
+								<div id="s-lc-rm-ac-success" style="display: none;" tabindex="0"></div><script type="text/javascript">
+ 
+					var limit = parseInt(120);
+					function checkDur(id) {
+						var tot = 0;
+						jQuery('.durc:checked').each(function(index) {
+							var cid = jQuery(this).attr('id') + 'dur';
+							var val = jQuery('#'+cid).val();
+							tot = parseInt(tot) + parseInt(val);
+						});	
+						  
+						 if(tot > limit){
+							jQuery('#sch'+id).prop('checked', false);
+							alert('Sorry, but you have exceeded the Daily maximum of 2 hours!');
+							return false;
+						 }
+						 var cb_counter = 0;
+						 jQuery('.durc:checked').each(function(index) { cb_counter++; });
+						 
+						 
+						 force_seq(id);
+
+					}
+					</script>
+</div></div></section></div>
+			<div id="s-lc-public-footer" class="s-lc-public-footer row" role="contentinfo">
+				<div id="s-lc-public-footer-brand">
+					<span title="libcal-2">Powered by</span> <a href="http://www.springshare.com">Springshare</a>.
+				</div>
+				<div id="s-lc-public-footer-rights">
+				   All rights reserved.
+				</div><div id="s-lc-footer-support-link"><a href="https://libraries.usc.edu/ask-a-librarian">Report a tech support issue.</a></div><div id="s-lc-public-footer-admin-links"><a id="s-lc-sign-in" href="https://usc.libapps.com/libapps/login.php?site_id=5211&target=">Login to LibApps</a></div></div><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-29524660-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</div>
+<div id="s-lc-public-cust-footer"><p id="footer-usc-name" style="text-align: center;">© University of Southern California  | <a href="https://libraries.usc.edu/ask-librarian">Contact us</a></p>
+</div>
+			<script>
+				function bookRoom(){
+
+							if (jQuery.trim(jQuery('#fname').val()) == '') { alert('First Name is required'); jQuery('#fname').focus(); return false; }
+							if (jQuery.trim(jQuery('#lname').val()) == '') { alert('Last Name is required'); jQuery('#lname').focus(); return false; }
+							var reg = /^(([^<>()[\]\.,;:\s@"]+(\.[^<>()[\]\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+							var em = jQuery('#email').val();
+							if (em =='') { alert('Email is required'); jQuery('#email').focus(); return false; }
+							if(reg.test(em) == false) { alert('Email is not in a valid format'); jQuery('#email').focus(); return false; }
+							
+							var em_msg = 'Your email address must end in: @usc.edu'; if((em.search(/@usc.edu/i)=="-1")){ alert(em_msg); return false; }
+							
+							var chks = document.getElementsByName('sid[]');
+							var cb_counter = 0;
+							for (var i = 0; i < chks.length; i++){
+								if (chks[i].checked){
+									cb_counter++;
+								}
+							}
+							if(cb_counter == 0){ alert('Please select a time slot!'); return false; }
+							
+							
+							
+							jQuery('#s-lc-rm-ac-but').prop('disabled', true).text('Working...');
+							jQuery.post(
+								'process_roombookings.php?m=booking_mob', 
+								jQuery('#roombookingform').serialize(),
+								function (data) {
+									
+									jQuery('#s-lc-rm-ac-but').prop('disabled', false).text('Submit Booking');		
+									
+									/*error*/
+									if (data.status === 0) {
+										alert(data.msg);
+										if(data.type === 'b2b'){
+								
+										}else{
+											window.location.reload();
+										}
+									/*error email*/
+									}else if (data.status === 1) {
+										alert(data.msg);
+										
+									/*Mediation, Tentative or Confirmed*/
+									}else if (data.status === 2) {
+										jQuery('#roombookingform').hide();
+										jQuery('#s-lc-rm-ac-success').html(data.msg).show().focus();
+										jQuery('#s-lc-rm-ac-daily-l').hide();
+									}
+									
+								},
+								'json'
+							);	
+							return false;
+				}
+				function capacityr(){
+					var cap = jQuery('#s-lc-rm-capacity-cont input[name=cap]:checked').val();
+					if(cap == 0){
+						jQuery('.s-lc-rm-cap-l-1, .s-lc-rm-cap-l-5, .s-lc-rm-cap-l-9, .s-lc-rm-cap-l-13').show();
+					}else{
+						jQuery('.s-lc-rm-cap-l-1, .s-lc-rm-cap-l-5, .s-lc-rm-cap-l-9, .s-lc-rm-cap-l-13').hide();
+						jQuery('.s-lc-rm-cap-l-'+cap).show();
+					}
+					return true;
+				}
+				function force_seq(id){ return true; }
+				</script></body>
+</html>

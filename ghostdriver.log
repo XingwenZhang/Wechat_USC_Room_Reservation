@@ -1,0 +1,12 @@
+[INFO  - 2017-07-19T02:02:45.113Z] GhostDriver - Main - running on port 2397
+[INFO  - 2017-07-19T02:02:48.613Z] Session [5d2ff2f0-6c26-11e7-ad96-9d5e4c22a787] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-07-19T02:02:48.613Z] Session [5d2ff2f0-6c26-11e7-ad96-9d5e4c22a787] - page.customHeaders:  - {}
+[INFO  - 2017-07-19T02:02:48.613Z] Session [5d2ff2f0-6c26-11e7-ad96-9d5e4c22a787] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-07-19T02:02:48.613Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 5d2ff2f0-6c26-11e7-ad96-9d5e4c22a787
+[INFO  - 2017-07-19T02:07:27.311Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-19T02:12:27.317Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-19T02:17:27.317Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-19T02:22:27.319Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+s - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2017-07-19T02:22:45.108Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+d - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
